@@ -2,7 +2,6 @@ $(document).ready(function () {
 
   $("form").submit(function(event){
     event.preventDefault();
-    console.log("Hey we're here");
 
     $.post("/rolls", function(server_response){
       console.log(server_response);
